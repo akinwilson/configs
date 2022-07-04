@@ -116,6 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# For setting pyenv. It may be easier to have this part of the zshrc file instead.
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 
