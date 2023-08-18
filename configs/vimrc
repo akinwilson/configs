@@ -1,4 +1,5 @@
-" Don't try to be vi compatible
+"
+"Don't try to be vi compatible
 set nocompatible
 
 " set default shell for vim 
@@ -116,3 +117,9 @@ let g:solarized_termtrans=1
 " put https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
 " in ~/.vim/colors/ and uncomment:
 " colorscheme solarized
+"
+
+
+" Using Vundle 
+Plugin 'preservim/vimux'
+
