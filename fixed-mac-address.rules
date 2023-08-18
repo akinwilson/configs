@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="net", DRIVERS=="?*", ATTR{address}=="48:22:54:11:bd:1c", NAME="eth0"
