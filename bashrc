@@ -1,7 +1,3 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
-# for examples
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -123,3 +119,5 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 #if command -v pyenv 1>/dev/null 2>&1; then
 eval "$(pyenv init -)"
 #fi
+source <(kubectl completion bash)
+. "$HOME/.cargo/env"
