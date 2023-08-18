@@ -1,0 +1,17 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": null,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true
+    },
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.formatOnSave": true
+    },
+    "workbench.editor.enablePreview": false,
+    "workbench.startupEditor": "none",
+
+    "python.formatting.provider": "black",
+    "notebook.formatOnSave.enabled": true
+}
