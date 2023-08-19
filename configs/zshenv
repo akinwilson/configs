@@ -1,0 +1,21 @@
+. "$HOME/.cargo/env"
+
+# aliases; to allow aliases to work from vim command line 
+
+alias jp="jupyter notebook"
+alias stc="speedtest-cli --secure"
+alias tf="terraform"
+alias python="python3"
+alias gs="git status"
+alias ga="git add"
+alias gcm="git commit -m"
+alias gc="git commit"
+alias gd="git diff"
+alias docker-compose="docker compose"
+alias dc="docker compose"
+alias d="docker"
+alias k="kubectl"
+alias mk="minikube"
+alias cl="clear"
+alias cr="cargo run"
+alias cb="cargo build"
