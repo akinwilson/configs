@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/otis'
+let g:netrw_dirhist_0='/home/otis/Code'
+let g:netrw_dirhist_9='/home/otis/Code/rust'
+let g:netrw_dirhist_8='/home/otis/Code/rust/rpl'
+let g:netrw_dirhist_7='/home/otis/Code/rust/rpl/ch9'
+let g:netrw_dirhist_6='/home/otis/Code/rust/rpl/ch9/error_handling'
+let g:netrw_dirhist_5='/home/otis/Code/rust/rpl/ch9/error_handling/src'
+let g:netrw_dirhist_4='/home/otis/Code/rust/rpl/ch9/error_handling'
+let g:netrw_dirhist_3='/home/otis/Code/rust/rpl/ch9/error_handling/src'
+let g:netrw_dirhist_2='/home/otis/Code/rust/rpl/ch9/error_handling'
