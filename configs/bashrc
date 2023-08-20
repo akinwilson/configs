@@ -121,3 +121,6 @@ eval "$(pyenv init -)"
 #fi
 source <(kubectl completion bash)
 . "$HOME/.cargo/env"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
