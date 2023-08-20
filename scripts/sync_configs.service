@@ -1,0 +1,11 @@
+[Unit]
+Description=Local configuration file sync to repository
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=otis
+ExecStart=/home/otis/Code/configs/scripts/sync_node_to_repo.sh
+
