@@ -8,4 +8,5 @@ Restart=always
 RestartSec=1
 User=otis
 ExecStart=/home/otis/Code/configs/scripts/sync_node_to_repo.sh
-
+[Install]
+WantedBy=multi-user.target
