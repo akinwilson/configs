@@ -15,6 +15,6 @@ syncing_configs ".vim/Makefile" "vim/Makefile" &
 syncing_configs ".zshrc" "zshrc" & 
 syncing_configs ".zshenv" "zshenv" & 
 syncing_configs ".bashrc" "bashrc" & 
-
+syncing_configs ".install-jpnb.py" "install-jpnb.py" &
 wait 
 
