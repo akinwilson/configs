@@ -9,6 +9,12 @@ syncing_configs () {
   done
 }
 
-syncing_configs ".tmux.conf" "tmux.conf" 
+syncing_configs ".tmux.conf" "tmux.conf" & 
+syncing_configs ".vim/init.vim" "vim/init.vim" &
+syncing_configs ".vim/Makefile" "vim/Makefile" & 
+syncing_configs ".zshrc" "zshrc" & 
+syncing_configs ".zshenv" "zshenv" & 
+syncing_configs ".bashrc" "bashrc" & 
 
+wait 
 
