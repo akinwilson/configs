@@ -1,7 +1,10 @@
 import subprocess
 import os
 
-print(os.getcwd())
+print(f"Current working dirctory: { os.getcwd() }")
+
+
+
 pipenv_name = os.environ['VIRTUAL_ENV'].split("/")[-1]
 
 print(f"Installing ipykernel to environment: {pipenv_name}")

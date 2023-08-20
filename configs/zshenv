@@ -1,7 +1,9 @@
 . "$HOME/.cargo/env"
 
 # aliases; to allow aliases to work from vim command line 
-
+# for some reason, the aliases from .zshrc are not picked
+# up by the vim cli and so to used them via
+# the :!<cli_command> format, the .zshenv needs to exist with the aliases in it 
 alias jp="jupyter notebook"
 alias stc="speedtest-cli --secure"
 alias tf="terraform"
