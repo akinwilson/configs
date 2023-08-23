@@ -22,4 +22,22 @@ i.e.
 sudo cd  `~/.vim/vendor/youcompleteme && ./install.py --racer-completer
 ```
 
+## Setting up `tmux`
+
+
+when ever a change is made to `~/.tmux.conf`, install the required plugins with
+```
+[crtl + b] + I
+```
+
+clean your plugin repository via uninstall older/unused ones with 
+```
+[ctrl + b] + [atl + u]
+```
+
+source the current configuration file for`tmux` with 
+```
+[ctrl + b] :source-file ~/.tmux.conf 
+```
+
 
