@@ -1,19 +1,18 @@
 # Confiuration File Synchronizer 
 
-`./scripts`  contains two scripts;
+Tracking configurations across hosts. 
 
-1) for updating repository with local configurations
-2) for updating local configurations with repository's 
+```
+./
+├── configs
+├── README.md
+└── scripts
+```
 
-`./configs` contains all the relevant configuartion files 
- 
+`configs` contains configurations for cli text editor vim, jupyter notebooks, vscode, tmux and the shells I like to use.
+<br><br>
+`scripts` contains a synchronization script to link the configuration files to this repository and a unit service defintion file to ensure the confiration are contiunously monitored for changes.
 
 
-run `./scripts/source.sh` to take this repository's config files and replace
-this current node's files 
-<br>
-<br>
-run `./scripts/distribute.sh` to update this repository's config files with
-this node's local files. 
 
 
