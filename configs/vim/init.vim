@@ -1,6 +1,8 @@
 let g:mapleader=" "
 call plug#begin("~/.vim/vendor")
-if !has('nvim') && !exists('g:gui_oni') | Plug 'tpope/vim-sensible' | endif
+" basic config everyone agreess with 
+Plug 'tpope/vim-sensible'
+" more optinated than sensible 
 Plug 'rstacruz/vim-opinion'
 " integrate with tmux 
 Plug 'preservim/vimux'
@@ -11,18 +13,46 @@ Plug 'junegunn/fzf.vim'
 Plug 'w0rp/ale'
 " tab to space conversion on files 
 Plug 'tpope/vim-sleuth'
-" language support
-Plug 'sheerun/vim-polyglot'
-" language completion/preditions
-Plug 'valloric/youcompleteme'
-" pretty start up screen
-Plug 'mhinz/vim-startify'
+
+" Display indentation level 
+"Plug 'Yggdroot/indentLine'
+
+" roge colour scheme 
+" Plug 'mox-mox/vim-localsearch'
+
+" set command to execute python script with make command 
+call plug#end()
+
+
+
+" setting theme 
+let g:airline_theme='simple'
+
+
+" open vim output to tmux in vertical, rather than horizontal terminal widows  
+let g:VimuxOrientation='h'
+
+" size of termina to open; presentage 
+let g:VimuxHeight=45
+
+
+
 " allow copy and paste from system clipboard
 set clipboard=unnamedplus
 " allow mouse to work in visual mode for copy and paste 
 set mouse=v
-" set command to execute python script with make command 
-" set makeprg=python3\ %
-" set makeprg=clear\ &&\ cargo\ run\ %:p:h:e
-call plug#end()
+" dont show preview window for semantic compeleter 
+set completeopt-=preview
+
+" run current file with using makefile's make defition
+"
+" avoids you needing to specify different run-buffer commands 
+" so define makefile in every respository.  
+map <Leader>xm :call VimuxRunCommand("clear; make ")<CR> 
+
+ 
+map <Leader>xc :call VimuxRunCommand("clear; cargo run " . bufname("%"))<CR>
+
+map <Leader>xp :call VimuxRunCommand("clear; python " . bufname("%"))<RC>
+
 
