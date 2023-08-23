@@ -14,11 +14,15 @@ Plug 'w0rp/ale'
 " tab to space conversion on files 
 Plug 'tpope/vim-sleuth'
 
-" Display indentation level 
-"Plug 'Yggdroot/indentLine'
+"Display indentation level 
+Plug 'Yggdroot/indentLine'
 
 " roge colour scheme 
-" Plug 'mox-mox/vim-localsearch'
+Plug 'mox-mox/vim-localsearch'
+
+"complete text 
+Plug 'ycm-core/youcompleteme'
+
 
 " set command to execute python script with make command 
 call plug#end()
@@ -48,11 +52,8 @@ set completeopt-=preview
 "
 " avoids you needing to specify different run-buffer commands 
 " so define makefile in every respository.  
-map <Leader>xm :call VimuxRunCommand("clear; make ")<CR> 
+map <Leader>xm :write<CR>:call VimuxRunCommand("clear; make ")<CR> 
 
  
-map <Leader>xc :call VimuxRunCommand("clear; cargo run " . bufname("%"))<CR>
-
-map <Leader>xp :call VimuxRunCommand("clear; python " . bufname("%"))<RC>
 
 
