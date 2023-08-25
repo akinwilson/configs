@@ -23,6 +23,14 @@ Plug 'mox-mox/vim-localsearch'
 "complete text 
 Plug 'ycm-core/youcompleteme'
 
+" theme 
+Plug 'tpope/vim-vividchalk'
+
+"commenting text in and out 
+Plug 'tpope/vim-commentary'
+
+" pairs of quotes, parenthasis ...
+Plug 'jiangmiao/auto-pairs'
 
 " set command to execute python script with make command 
 call plug#end()
@@ -30,7 +38,7 @@ call plug#end()
 
 
 " setting theme 
-let g:airline_theme='simple'
+" let g:airline_theme='simple'
 
 
 " open vim output to tmux in vertical, rather than horizontal terminal widows  
@@ -48,12 +56,30 @@ set mouse=v
 " dont show preview window for semantic compeleter 
 set completeopt-=preview
 
+" remap double comma to escape in insert mode to avoid keyboard gymnastics
+imap ,, <Esc> 
+
+" remap double comma to escape in visual and selct mode to avoid keyboard
+" gymansitcs
+"
+xnoremap ,, <Esc> 
+
+
+" colour scheme  
+colorscheme vividchalk
+
+
 " run current file with using makefile's make defition
 "
 " avoids you needing to specify different run-buffer commands 
 " so define makefile in every respository.  
 map <Leader>xm :write<CR>:call VimuxRunCommand("clear; make ")<CR> 
 
- 
+" cargo run for rust
+map <Leader>xc :write<CR>:call VimuxRunCommand("clear; cargo run")<CR>
+
+" python3 for python 
+map <Leader>xp :write<CR>:call VimuxRunCommand("clear; python3 " . bufname("%"))<CR>
+
 
 
