@@ -32,6 +32,11 @@ Plug 'tpope/vim-commentary'
 " pairs of quotes, parenthasis ...
 Plug 'jiangmiao/auto-pairs'
 
+
+" nerd tree
+Plug 'preservim/nerdtree'
+
+
 " set command to execute python script with make command 
 call plug#end()
 
@@ -72,14 +77,19 @@ colorscheme vividchalk
 " run current file with using makefile's make defition
 "
 " avoids you needing to specify different run-buffer commands 
-" so define makefile in every respository.  
-map <Leader>xm :write<CR>:call VimuxRunCommand("clear; make ")<CR> 
-
-" cargo run for rust
+" so define makefile 
+" q every respository.
+" ----> attempted rust formating 
+"  call VimuxRunCommand('rustfmt ' . bufname('%'))<CR>:
+"
+map <Leader>xm :write<CR>:call VimuxRunCommand("clear; make")<CR> 
+" cargo run for bin project
 map <Leader>xc :write<CR>:call VimuxRunCommand("clear; cargo run")<CR>
-
+" cargo build for lib projects
+map <Leader>xb :write<CR>:call VimuxRunCommand("clear; cargo build")<CR>
 " python3 for python 
 map <Leader>xp :write<CR>:call VimuxRunCommand("clear; python3 " . bufname("%"))<CR>
 
-
+" make vim reload a file as soon as there are changes 
+set autoread 
 
