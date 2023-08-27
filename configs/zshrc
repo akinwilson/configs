@@ -57,6 +57,17 @@ eval "$(pyenv init -)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# coloursied ip output automatically 
+alias ip='ip -color=auto'
+
+
+# colourised grep output automatically 
+alias grep='grep --color=auto'
+
+
+# colourised diff output automatically 
+alias diff='diff --color=auto'
+
 
 # colourizing man results 
 export LESS_TERMCAP_mb=$'\e[1;32m'
