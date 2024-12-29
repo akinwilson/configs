@@ -1,5 +1,5 @@
 # Personal configurations 
-
+![](img/config.jpg "configuration")
 ## Overview 
 Having to touch a mouse whilst developing software can be considered a [cache](https://en.wikipedia.org/wiki/Cache_(computing)) miss. Having to continously switch between using the keyboard and mouse/tracking slows down productively. This repository contains the configuration files to allow a developer to avoid using the mouse/trackpad during software development, replying on [vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) - the text editor, and [tmux](https://en.wikipedia.org/wiki/Tmux) - the terminal multiplexer, to acheive this workflow.  
 
