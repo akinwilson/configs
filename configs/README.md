@@ -13,9 +13,18 @@ Finally, install the tmux plugins, press the hotkeys
 ```
 where `I` stands for **I**nstall. The tmux plugin manager will then install all the required plugins listed in (what should be) your local copy of `~/.tmux.conf`. 
 
+
+Please see the file `tmux.commands.md` for more information on the possible hotkeys to use with `tmux`
+
+
 ## Vim  
 
-Vim has many plugin manager and in order to converge to a stable design pattern for handling all the various plugins, I followed [this](https://github.com/junegunn/vim-plug)
+Vim has many plugin manager and in order to converge to a stable design pattern for handling all the various plugins, I followed [this](https://github.com/junegunn/vim-plug). In essence, all you need to run is the follow command:
+```
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+This will install the `vim` plug-in manager. 
 
 
 **YouCompleteMe; YCM plugin**
@@ -34,23 +43,4 @@ i.e.
 ```
 sudo cd  `~/.vim/vendor/youcompleteme && ./install.py --racer-completer
 ```
-
-## Setting up `tmux`
-
-
-when ever a change is made to `~/.tmux.conf`, install the required plugins with
-```
-[crtl + b] + I
-```
-
-clean your plugin repository via uninstall older/unused ones with 
-```
-[ctrl + b] + [atl + u]
-```
-
-source the current configuration file for`tmux` with 
-```
-[ctrl + b] :source-file ~/.tmux.conf 
-```
-
 
