@@ -8,6 +8,8 @@ The `scripts/` directory contains bash scripts to automatically sync configurati
 
 ## Configs 
 Please read the `configs/README.md` for installation process for `tmux` and `vim`. The rest of the configuration files like `bashrc`, `zshrc` and `vscode.settings.json` need to just replace their respective version on your local machine. To use the `zshrc` configuration file, you will need [oh my zsh](https://ohmyz.sh/) installed. Please follow the hyperlink to do so.  
+
+```
 .
 │├── bashrc
 │├── commands
@@ -24,7 +26,6 @@ Please read the `configs/README.md` for installation process for `tmux` and `vim
 │├── vscode.settings.json
 │├── zshenv
 │└── zshrc
-
 ```
 
 
