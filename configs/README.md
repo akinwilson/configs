@@ -1,11 +1,11 @@
 # Setup
 
 ## Tmux 
-Before being able to apply the Tmux configurations in `tmux.conf` file, you will need the [tmux plugin manager](https://github.com/tmux-plugins/tpm). Please follow the guide hyperlinked. In essence, all you need to run is the following command:
+ Before being able to apply the Tmux configurations in `tmux.conf` file, you will need the [tmux plugin manager](https://github.com/tmux-plugins/tpm). Please follow the guide hyperlinked. In essence, all you need to run is the following command:
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
-then, copy the configuration file `tmux.conf` to the local location of `~/.tmux.conf`
+Then, copy the configuration file `tmux.conf` to the local location of `~/.tmux.conf`
 
 Finally, install the tmux plugins, press the hotkeys
 ```
@@ -19,12 +19,14 @@ Please see the file `tmux.commands.md` for more information on the possible hotk
 
 ## Vim  
 
-Vim has many plugin manager and in order to converge to a stable design pattern for handling all the various plugins, I followed [this](https://github.com/junegunn/vim-plug). In essence, all you need to run is the follow command:
+You need to install a vim plug-in manager. In essence, all you need to run is the follow command:
 ```
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
-This will install the `vim` plug-in manager. 
+This will install the [vim plug-in manager](https://github.com/junegunn/vim-plug). 
+
+Next you will want to copy the the `vim` directory of this repository to your local filesystem under `~/.vim` 
 
 
 **YouCompleteMe; YCM plugin**
