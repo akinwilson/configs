@@ -26,23 +26,28 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 ```
 This will install the [vim plug-in manager](https://github.com/junegunn/vim-plug). 
 
-Next you will want to copy the the `vim` directory of this repository to your local filesystem under `~/.vim` 
+Next you will want to copy the the `vim` directory of this repository to your local filesystem under `~/.vim`. 
 
 
-**YouCompleteMe; YCM plugin**
-<br>
-Whilst in `vi`, source the **`~/.vim/init.vim`**:
-configurations for `~/.vimrc` will automatically updted via  symlink and from the executation of `make` [only initial sym linking setup required] and then `:source ~/.vim/init.vim` and `:PluginInstall` from `vim`
-
-
-you need to configuration the YCM installation for both the **indentifier** and **semantic** completer
-
-got to `~/.vim/vendor/youcompleteme/` and run `./install.py --racer-completer` to install the `rust-analyzer`
-
-
-i.e. 
+To install the plugins listed in `init.vim`.  open vim, and run the command **from inside vim** 
+```
+:PlugInstall
+```
+Next, you need to install additional requirements for the code completion library of [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe). To install the additional plugins from YouCompleteMe, you will need the `cmake` executable install. Run:
 
 ```
-sudo cd  `~/.vim/vendor/youcompleteme && ./install.py --racer-completer
+sudo apt install cmake -y 
+```
+Then, you are ready to install the code completion plugin of YouCompleteMe  via running 
+```
+~/.vim/vendor/youcompleteme/install.py --racer-completer
 ```
 
+You need to [symlink](https://en.wikipedia.org/wiki/Symbolic_link) the configuration files for `vim`, such that the `~/.vimrc` is generated from `~/.vim/init.vim`. This can be achieved by running the `Makefile`. I.e. from inside of the directory `~/.vim` run:
+```
+make
+```
+## To do 29 Dec 2024
+1) Build a script which automates the setup of `tmux` and `vim` to avoid manually having to enter these commands.
+2) Add readme for `tmux` and `vim` hotkey commands.
+3) Add inforamtion about other configuration files in this repository. 
