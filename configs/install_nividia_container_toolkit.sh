@@ -18,4 +18,4 @@ echo "Configuring container runtime ..."
 sudo nvidia-ctk runtime configure --runtime=docker
 
 echo "Restarting docker daemon ..."
-systemctl restart docker
+sudo systemctl restart docker
