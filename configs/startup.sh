@@ -128,10 +128,12 @@ sudo snap install --classic code
 
 
 echo "Setting up GPU device drivers ...."
-
+# https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-22-04
 sudo ubuntu-drivers autoinstall
 
 echo "Moving application dock to bottom of screen ..."
+
+# https://linuxconfig.org/how-to-customize-dock-panel-on-ubuntu-20-04-focal-fossa-linux
 sudo apt-get install dconf-editor -y 
 
 gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
