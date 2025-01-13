@@ -3,6 +3,12 @@
 ## Overview 
 Having to touch a mouse whilst developing software can be considered a [cache](https://en.wikipedia.org/wiki/Cache_(computing)) miss. Having to continously switch between using the keyboard and mouse/trackpad slows down productively. This repository contains the configuration files to allow a developer to avoid using the mouse/trackpad during software development, replying on [vim](https://en.wikipedia.org/wiki/Vim_(text_editor)) - the text editor, and [tmux](https://en.wikipedia.org/wiki/Tmux) - the terminal multiplexer, to acheive this workflow.  
 
+## Setup
+Assuming you have a clean machine; a fresh installation of the Debian distribution of Ubuntu, you can use the `config/startup.sh` script to install the usual tools found in a developer's toolkit; `vim`, `zsh`, `vscode`, `docker` etc. **Note**: the script will pull configuration files from this repostory too. To setup a fresh machine, run:
+```
+configs/startup.sh
+```
+
 ## Automated tracking 
 The `scripts/` directory contains bash scripts to automatically sync configuration files with this repository. It requires you to have a service (a service visible via [systemctl](https://en.wikipedia.org/wiki/Systemd)) locally running. I personal do not use this automated tracking service, but it is here for others to make us of if they choose to automate the configuration tracking on their personal machines. 
 
