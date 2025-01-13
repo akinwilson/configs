@@ -127,3 +127,16 @@ echo "Installing vscode ..."
 sudo snap install --classic code
 
 
+echo "Setting up GPU device drivers ...."
+
+sudo ubuntu-drivers autoinstall
+
+echo "Moving application dock to bottom of screen ..."
+sudo apt-get install dconf-editor -y 
+
+gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
+
+
+
+
