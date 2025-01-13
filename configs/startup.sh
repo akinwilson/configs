@@ -44,7 +44,10 @@ sudo apt-get update -y
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -y
 
-
+# Allowing docker to be accessed as non-root user 
+sudo groupadd docker 
+sudo usermod -aG docker $USER 
+newgrp docker 
 echo "Setting up tmux packages ..."
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
