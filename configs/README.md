@@ -1,5 +1,16 @@
 # Setup
 
+## Overview 
+The `startup.sh` script will install all the usual applications like `docker`, `kind`, `vim`, `tmux`, `code` etc and configure the application dock to be relocated to the bottom of the screen. The easiest way to run it would be via
+
+```
+curl https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/startup.sh | bash
+```
+The following sections gives an overview of how to use `tmux` and `vim` especially, since they come with their own package managers and workflows unique to themselves. Any setup like installing the package managers for either `tmux` or `vim` is encompassed in the `startup.sh` script. So if you would like to set things with a *one-liner* the above command is your friend. 
+
+**Note**: The `startup.sh` script assumes you have an `x86_64` architecture. 
+
+
 ## Tmux 
  Before being able to apply the Tmux configurations in `tmux.conf` file, you will need the [tmux plugin manager](https://github.com/tmux-plugins/tpm). Please follow the guide hyperlinked. In essence, all you need to run is the following command:
 ```
