@@ -127,6 +127,14 @@ echo "Installing vscode ..."
 sudo snap install --classic code
 
 
+
+# https://kind.sigs.k8s.io/docs/user/quick-start/
+echo "Installing kind ..."
+[ $(uname -m) = x86_64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.26.0/kind-linux-amd64
+chmod +x ./kind
+sudo mv ./kind /usr/local/bin/kind
+
+
 echo "Installing network-related cli tools, e.g. ifconfig ...."
 sudo apt-get install net-tools -y 
 
