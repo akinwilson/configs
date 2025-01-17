@@ -89,7 +89,8 @@ map <Leader>xc :write<CR>:call VimuxRunCommand("clear; cargo run")<CR>
 map <Leader>xb :write<CR>:call VimuxRunCommand("clear; cargo build")<CR>
 " python3 for python 
 map <Leader>xp :write<CR>:call VimuxRunCommand("clear; python3 " . bufname("%"))<CR>
-
+" opening and closng nerd tree 
+map <Leader>nt :NERDTreeToggle<CR>
 " make vim reload a file as soon as there are changes 
 set autoread 
 
