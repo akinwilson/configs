@@ -20,6 +20,7 @@ echo "Installing tmux .."
 sudo apt install tmux -y 
 
 
+
 echo "Installing pyenv ..."
 curl https://pyenv.run | bash
 
@@ -138,8 +139,11 @@ sudo mv ./kind /usr/local/bin/kind
 echo "Installing network-related cli tools, e.g. ifconfig ...."
 sudo apt-get install net-tools -y 
 
-echo "Installing node.js ..."
+echo "Installing node ..."
 sudo apt install nodejs -y 
+
+echo "Installing node package manager ..."
+sudo apt install npm -y 
 
 
 echo "Setting up GPU device drivers ...."
