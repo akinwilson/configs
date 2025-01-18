@@ -82,7 +82,8 @@ sudo apt install cmake -y
 echo "Installing make ..."
 sudo apt install make -y 
 
-
+echo "installing ffmpeg ..."
+sudo apt install ffmpeg -y
 
 ###
 echo "Installing vim from source ..."
