@@ -89,7 +89,7 @@ sudo apt install ffmpeg -y
 echo "Installing vim from source ..."
 
 sudo apt-get install libncurses-dev
-git clone https://github.com/vim/vim.git ~/
+git clone https://github.com/vim/vim.git 
 cd vim/src
 ./configure --with-features=huge --enable-python3interp
 make
