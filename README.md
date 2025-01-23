@@ -8,33 +8,10 @@ Assuming you have a clean machine; a fresh installation of the Debian distributi
 ```
 configs/startup.sh
 ```
-
-## Automated tracking 
-The `scripts/` directory contains bash scripts to automatically sync configuration files with this repository. It requires you to have a service (a service visible via [systemctl](https://en.wikipedia.org/wiki/Systemd)) locally running. I personal do not use this automated tracking service, but it is here for others to make us of if they choose to automate the configuration tracking on their personal machines. 
-
 ## Configs 
-Please read the `configs/README.md` for installation process for `tmux` and `vim`. The rest of the configuration files like `bashrc`, `zshrc` and `vscode.settings.json` need to just replace their respective version on your local machine. To use the `zshrc` configuration file, you will need [oh my zsh](https://ohmyz.sh/) installed. Please follow the hyperlink to do so.  
+Please read the `configs/README.md` for installation process for `tmux` and `vim`. The rest of the configuration files like `bashrc`, `zshrc` and `vscode.settings.json` need to just replace their respective version on your local machine. To use the `zshrc` configuration file, you will need [oh my zsh](https://ohmyz.sh/) installed. Please follow the hyperlink to do so if you wish to manually install it. The `configs/startup.sh` installs `zsh` for you though, so dont worry about manually doing it
 
-```
-.
-│├── bashrc
-│├── commands
-││   ├── tmux.md
-││   └── vim.md
-│├── fixed-mac-address.rules
-│├── install-jpnb.py
-│├── jupyter-notebook-configs
-│├── README.md
-│├── tmux.conf
-│├── vim
-││   ├── init.vim
-││   └── Makefile
-│├── vscode.settings.json
-│├── zshenv
-│└── zshrc
-```
-
-
-
+## Scripts 
+This was an old application which containers a [system service](https://www.freedesktop.org/software/systemd/man/latest/systemctl.html) configuration file to automate the process of syncing these configurations. I don't personally use this system service, but it is there for anyone else to make use of. In essence, it explains to you how to setup system services, with the configuration syncing just being an application of a system service.   
 
 
