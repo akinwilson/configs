@@ -19,9 +19,9 @@ print("pip location: ", pip_loc)
 print("Install ipykernel to user in environment")
 
 try:
-    subprocess.check_call([pip_loc,"install","ipykernel", "jupyterlab", "jupyter_nbextensions_configurator", "jupyter-http-over-ws"])
+    subprocess.check_call([pip_loc,"install","ipykernel", "jupyterlab", "jupyter_nbextensions_configurator", "jupyter-http-over-ws", "ipywidgets", "widgetsnbextension"])
 except subprocess.CalledProcessError:
-    subprocess.check_call(["pip","install", "ipykernel", "jupyterlab", "jupyter_nbextensions_configurator", "jupyter-http-over-ws"])
+    subprocess.check_call(["pip","install", "ipykernel", "jupyterlab", "jupyter_nbextensions_configurator", "jupyter-http-over-ws",  "ipywidgets", "widgetsnbextension"])
     pass
 try:
     subprocess.check_call([str(python_loc), "-m", "ipykernel", "install", "--user", f"--name={pipenv_name}"])
