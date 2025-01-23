@@ -91,6 +91,21 @@ map <Leader>xb :write<CR>:call VimuxRunCommand("clear; cargo build")<CR>
 map <Leader>xp :write<CR>:call VimuxRunCommand("clear; python3 " . bufname("%"))<CR>
 " opening and closng nerd tree 
 map <Leader>nt :NERDTreeToggle<CR>
+
+
+" commenting blocks of code.
+augroup commenting_blocks_of_code
+  autocmd!
+    autocmd FileType c,cpp,java,scala,rust  let b:comment_leader = '// '
+    autocmd FileType sh,ruby,python         let b:comment_leader = '# '
+    autocmd FileType conf,fstab             let b:comment_leader = '# '
+    autocmd FileType tex                    let b:comment_leader = '% '
+    autocmd FileType mail                   let b:comment_leader = '> '
+    autocmd FileType vim                    let b:comment_leader = '" '
+augroup END
+noremap <silent> co :<C-B>silent <C-E>s/^/<C-R>=escape(b:comment_leader,'\/')<CR>/<CR>:nohlsearch<CR>
+noremap <silent> ci :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>//e<CR>:nohlsearch<CR>
+
 " make vim reload a file as soon as there are changes 
 set autoread 
 
