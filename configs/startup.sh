@@ -149,7 +149,7 @@ sudo apt install npm -y
 
 echo "Setting up GPU device drivers ...."
 # https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-22-04
-sudo ubuntu-drivers autoinstall
+sudo ubuntu-drivers autoinstall || sudo ubuntu-drivers install nvidia:550
 
 echo "Moving application dock to bottom of screen ..."
 
