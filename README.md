@@ -12,6 +12,6 @@ configs/startup.sh
 Please read the `configs/README.md` for installation process for `tmux` and `vim`. The rest of the configuration files like `bashrc`, `zshrc` and `vscode.settings.json` need to just replace their respective version on your local machine. To use the `zshrc` configuration file, you will need [oh my zsh](https://ohmyz.sh/) installed. Please follow the hyperlink to do so if you wish to manually install it. The `configs/startup.sh` installs `zsh` for you though, so dont worry about manually doing it
 
 ## Scripts 
-This was an old application which containers a [system service](https://www.freedesktop.org/software/systemd/man/latest/systemctl.html) configuration file to automate the process of syncing these configurations. I don't personally use this system service, but it is there for anyone else to make use of. In essence, it explains to you how to setup system services, with the configuration syncing just being an application of a system service.   
+This was an old application which contains a [system service](https://www.freedesktop.org/software/systemd/man/latest/systemctl.html) configuration file to automate the process of syncing these configurations. I don't personally use this system service, but it is there for anyone else to make use of. In essence, it explains to you how to setup system services, with the configuration syncing just being an application of a system service.   
 
 
