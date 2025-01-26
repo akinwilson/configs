@@ -4,20 +4,13 @@ import subprocess
 import os
 
 print(f"Current working dirctory: { os.getcwd() }")
-
-
-
 pipenv_name = os.environ['VIRTUAL_ENV'].split("/")[-1]
-
 print(f"Installing ipykernel to environment: {pipenv_name}")
-
 python_loc = subprocess.check_output(["which", "python"]).decode("utf-8").rstrip("\n")
 pip_loc = subprocess.check_output(["which", "pip"]).decode("utf-8").rstrip("\n")
-
 print("python location: ", python_loc)
 print("pip location: ", pip_loc)
 print("Install ipykernel to user in environment")
-
 try:
     subprocess.check_call([pip_loc,"install","ipykernel", "jupyterlab", "jupyter_nbextensions_configurator", "jupyter-http-over-ws", "ipywidgets", "widgetsnbextension"])
 except subprocess.CalledProcessError:
