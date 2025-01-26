@@ -11,6 +11,10 @@ sudo apt-get install git -y
 echo "Installing oh-my-zsh..."
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+
+echo "Copying over jupyter-notebook configuration ..."
+curl -o $HOME/.ipython/profile_default/startup/00-supress-warnings-print-all.py https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/00-supress-warnings-print-all.python3 
+
 echo "Copying over zshrc file from git repo ..."
 curl -o ~/.zshrc https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/zshrc
 echi "Copying over bashrc file from git repo ..."
