@@ -129,6 +129,9 @@ sudo apt-get update && sudo apt-get install build-essential -y
 echo "Installing YouCompleteMe vim extension ..."
 ~/.vim/vendor/youcompleteme/install.py --racer-completer
 
+echo "Installing nerd fonts for display bar ... "
+mkdir -p ~/.local/share/fonts
+cd ~/.local/share/fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/DroidSansMono/DroidSansMNerdFont-Regular.otf
 
 
 echo "Installing python pip..."
