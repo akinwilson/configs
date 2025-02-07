@@ -19,6 +19,10 @@ echo "Copying over zshrc file from git repo ..."
 curl -o ~/.zshrc https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/zshrc
 echi "Copying over bashrc file from git repo ..."
 curl -o ~/.bashrc https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/bashrc
+echi "Copying over zshenv file from git repo ..."
+curl -o ~/.zshenv https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/zshenv
+
+
 
 echo "Installing tmux .."
 sudo apt install tmux -y 
