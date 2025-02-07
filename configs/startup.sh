@@ -135,11 +135,12 @@ cd ~/.local/share/fonts && curl -fLO https://github.com/ryanoasis/nerd-fonts/raw
 
 
 echo "Installing python pip..."
-
 sudo apt install python3-pip -y 
 
-echo "Installing pipenv ..."
-pip install pipenv --user 
+
+echo "Installing pipenv  system view ... "
+sudo apt-get -y install pipenv
+
 
 echo "Installing vscode ..."
 sudo snap install --classic code
