@@ -64,6 +64,8 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 echo "Copying over tmux plugin configurations ..."
 curl -o ~/.tmux.conf https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/tmux.conf
+echo "sourcing tmux configuration ..."
+tmux source ~/.tmux.conf
 
 
 echo "Installing kubectl ..."
