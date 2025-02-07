@@ -21,7 +21,8 @@ echi "Copying over bashrc file from git repo ..."
 curl -o ~/.bashrc https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/bashrc
 echi "Copying over zshenv file from git repo ..."
 curl -o ~/.zshenv https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/zshenv
-
+echo "Copying over tmux plugin configurations ..."
+curl -o ~/.tmux.conf https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/tmux.conf
 
 
 echo "Installing tmux .."
@@ -61,9 +62,6 @@ echo "Setting up tmux packages ..."
 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-
-echo "Copying over tmux plugin configurations ..."
-curl -o ~/.tmux.conf https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/tmux.conf
 echo "sourcing tmux configuration ..."
 tmux source ~/.tmux.conf
 
