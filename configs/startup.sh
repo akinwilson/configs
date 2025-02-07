@@ -4,13 +4,13 @@ sudo apt update -y
 sudo apt install curl -y
 
 
-echo "Installing zsh ..."
-sudo apt install zsh -y
 echo "Installing git ..."
 sudo apt-get install git -y
 echo "Installing oh-my-zsh..."
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+echo "Installing zsh ..."
+sudo apt install zsh -y
 
 echo "Copying over jupyter-notebook configuration ..."
 curl -o $HOME/.ipython/profile_default/startup/00-supress-warnings-print-all.py https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/00-supress-warnings-print-all.python3 
@@ -32,8 +32,8 @@ sudo apt install tmux -y
 echo "Installing pyenv ..."
 curl https://pyenv.run | bash
 
-echo "Sourcing zsh configuration ..."
-source ~/.zshrc
+# echo "Sourcing zsh configuration ..."
+# source ~/.zshrc
 
 echo "Installing docker ..."
 
