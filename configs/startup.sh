@@ -25,6 +25,7 @@ echo "Copying over tmux plugin configurations ..."
 curl -o ~/.tmux.conf https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/tmux.conf
 
 
+
 echo "Installing tmux .."
 sudo apt install tmux -y 
 
@@ -60,6 +61,10 @@ sudo usermod -aG docker $USER
 newgrp docker 
 echo "Setting up tmux packages ..."
 
+echo "Installing nvidia container toolkit ..."
+curl https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/install_nividia_container_toolkit.sh | sh
+
+echo "Installing tmux plugin manager ..."
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 echo "sourcing tmux configuration ..."
