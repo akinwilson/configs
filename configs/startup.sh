@@ -98,13 +98,16 @@ sudo apt install make -y
 echo "installing ffmpeg ..."
 sudo apt install ffmpeg -y
 
+echo "Installinmg dependencies to allow copying to system clipboard from vim ... "
+sudo apt-get install x11-utils libx11-dev libxtst-dev libxaw7-dev -y 
+
 ###
 echo "Installing vim from source ..."
 
 sudo apt-get install libncurses-dev
 git clone https://github.com/vim/vim.git 
 cd vim/src
-./configure --with-features=huge --enable-python3interp
+./configure --with-features=huge --enable-python3interp=yes --enable-clipboard
 make
 sudo make install
 
