@@ -87,8 +87,12 @@ curl -o ~/.vim/Makefile https://raw.githubusercontent.com/akinwilson/configs/ref
 curl -o ~/.vim/init.vim https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/vim/init.vim
 
 
-echo "Installing cmake ..."
+echo "Installing minikube ..."
+curl -LO https://github.com/kubernetes/minikube/releases/latest/download/minikube-linux-amd64
+sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
 
+
+echo "Installing cmake ..."
 sudo apt install cmake -y  
 
 
