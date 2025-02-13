@@ -30,7 +30,9 @@ echo "Installing tmux .."
 sudo apt install tmux -y 
 
 echo "Installing MinIO client cli tool ..."
-sudo snap install minio-client --edge --devmode
+wget https://dl.min.io/client/mc/release/linux-amd64/mc
+chmod +x mc
+sudo mv mc /usr/local/bin/
 
 
 echo "Installing pyenv ..."
