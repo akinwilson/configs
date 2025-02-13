@@ -29,6 +29,8 @@ curl -o ~/.tmux.conf https://raw.githubusercontent.com/akinwilson/configs/refs/h
 echo "Installing tmux .."
 sudo apt install tmux -y 
 
+echo "Installing MinIO client cli tool ..."
+sudo snap install minio-client --edge --devmode
 
 
 echo "Installing pyenv ..."
