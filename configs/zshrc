@@ -46,8 +46,6 @@ alias dc="docker compose"
 alias d="docker"
 alias k="kubectl"
 alias cl="clear"
-alias cr="cargo run"
-alias cb="cargo build"
 eval "$(pyenv init -)"
 
 # auto complete for cli tools 
