@@ -13,7 +13,7 @@ echo "Installing zsh ..."
 sudo apt install zsh -y
 
 echo "Copying over jupyter-notebook configuration ..."
-curl -o $HOME/.ipython/profile_default/startup/00-supress-warnings-print-all.py https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/00-supress-warnings-print-all.python3 
+curl -o $HOME/.ipython/profile_default/startup/00-supress-warnings-print-all.py https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/00-supress-warnings-print-all.py
 
 echo "Copying over zshrc file from git repo ..."
 curl -o ~/.zshrc https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/zshrc
