@@ -1,5 +1,3 @@
-. "$HOME/.cargo/env"
-
 # aliases; to allow aliases to work from vim command line 
 # for some reason, the aliases from .zshrc are not picked
 # up by the vim cli and so to used them via
