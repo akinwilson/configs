@@ -57,7 +57,7 @@ let g:VimuxHeight=45
 " allow copy and paste from system clipboard
 set clipboard=unnamedplus
 " allow mouse to work in visual mode for copy and paste 
-set mouse=v
+set mouse=a
 " dont show preview window for semantic compeleter 
 set completeopt-=preview
 
@@ -108,4 +108,6 @@ noremap <silent> ci :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<C
 
 " make vim reload a file as soon as there are changes 
 set autoread 
+
+
 
