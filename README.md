@@ -13,15 +13,13 @@ curl -s https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/con
 You can run this without cloning the repository on your local machine and as a consequence  you'll have a termianl shell that you'll be able to, if you want to, treat like an IDE, this is achieved by combining aspects of a [multiplexer](https://en.wikipedia.org/wiki/Terminal_multiplexer) and a powerful text editor; `vim`. 
 
 ##### **NOTE** 
-You need to make <u>**one**manual adjustment</u>  for the text package to be loaded with your terminal profile each time as you open your terminal to see the shell, such that, for example. the [status bar](https://github.com/rothgar/awesome-tmux#status-bar) of `tmux` is formatted properly, such that it appears formatted like this 
-
+You need to make **ONE** manual adjustment for the [text package](https://www.nerdfonts.com/) to be loaded with your terminal profile automatically each time you open your terminal to see the shell, such that, for example, the [status bar](https://github.com/rothgar/awesome-tmux#status-bar) of `tmux` is formatted properly. It should appear similar to
 ![](img/correcrtly-formatted-tmux-status-bar.png  "correcrtly formatted tmux status bar using Nerd fonts")
 
-Click the <kbd>≡</kbd> button at the top of the temrinal window, RHS side, select `Preferences`, then under the `Profiles` section, select the current one(create a Profile if it doesn't exist, the name can be anything). Under the `Text` tab of the selected `Prfile`, third line from the top, tick **Csutom font** and from the drop down menu of possible font packages to select from, select any that contain the word `Nerd Font`; you can keyword search for them. Select the font, click `apply` and exit the settings. Your `tmux` [status bar](https://github.com/rothgar/awesome-tmux#status-bar) should now format properly with the next terminal you open. 
 
+Click the <kbd>≡</kbd>  button at the top of the terminal window, RHS side, select `Preferences`, under the `Profiles` section LHS of the window, select the current one (create a `Profile` if it doesn't exist; name can be anything). Under the `Text` tab of the selected `Profile`, third line from the top, tick **Csutom font** and from the drop down menu of possible font packages to select from to the RHS of the tick box, select any that contain the word `Nerd Font`; you can to a  keyword search for them. Select the font, click `apply` and exit the settings. Your `tmux` [status bar](https://github.com/rothgar/awesome-tmux#status-bar) should now format properly with the next terminal you open. Again, it should look similar to this, but obviously with your own hostname etc, 
+![](img/correcrtly-formatted-tmux-status-bar.png  "correcrtly formatted tmux status bar using Nerd fonts")
 
-
- 
 ### Setup
 Assuming you have ( preferably a clean) installation of the Debian distribution of Linux like [Ubuntu](https://ubuntu.com/download), you can reveiew the `config/startup.sh` script to what see exactly what packages and tools will be installed alone with which configuration files, giving you information about the keyboard shortcut setup and so on.
 
