@@ -6,11 +6,14 @@ sudo apt install curl -y
 
 echo "Installing git ..."
 sudo apt-get install git -y
-echo "Installing oh-my-zsh..."
-sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "Installing zsh ..."
 sudo apt install zsh -y
+
+echo "Installing oh-my-zsh..."
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
 
 echo "Copying over jupyter-notebook configuration ..."
 curl --create-dirs -O --output-dir "$HOME/.ipython/profile_default/startup" \
