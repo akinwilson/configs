@@ -25,18 +25,18 @@ echo "Copying over bashrc file from git repo ..."
 curl -o ~/.bashrc https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/bashrc
 echo "Copying over zshenv file from git repo ..."
 curl -o ~/.zshenv https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/zshenv
-echo "Copying over tmux plugin configurations ..."
-curl -o ~/.tmux.conf https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/tmux.conf
+# echo "Copying over tmux plugin configurations ..."
+# curl -o ~/.tmux.conf https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/tmux.conf
 
 
 
-echo "Installing tmux .."
-sudo apt install tmux -y 
+# echo "Installing tmux .."
+# sudo apt install tmux -y 
 
-echo "Installing MinIO client cli tool ..."
-wget https://dl.min.io/client/mc/release/linux-amd64/mc
-chmod +x mc
-sudo mv mc /usr/local/bin/
+# echo "Installing MinIO client cli tool ..."
+# wget https://dl.min.io/client/mc/release/linux-amd64/mc
+# chmod +x mc
+# sudo mv mc /usr/local/bin/
 
 
 echo "Installing pyenv ..."
@@ -72,11 +72,11 @@ echo "Setting up tmux packages ..."
 echo "Installing nvidia container toolkit ..."
 curl https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/install_nividia_container_toolkit.sh | sh
 
-echo "Installing tmux plugin manager ..."
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+# echo "Installing tmux plugin manager ..."
+# git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-echo "sourcing tmux configuration ..."
-tmux source ~/.tmux.conf
+# echo "sourcing tmux configuration ..."
+# tmux source ~/.tmux.conf
 
 
 echo "Installing kubectl ..."
@@ -179,18 +179,18 @@ echo "Installing node package manager ..."
 sudo apt install npm -y 
 
 
-echo "Setting up GPU device drivers ...."
+# echo "Setting up GPU device drivers ...."
 # https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-22-04
-sudo ubuntu-drivers autoinstall || sudo ubuntu-drivers install nvidia:550
+# sudo ubuntu-drivers autoinstall || sudo ubuntu-drivers install nvidia:550
 
-echo "Moving application dock to bottom of screen ..."
+# echo "Moving application dock to bottom of screen ..."
 
 # Display-related 
 # https://linuxconfig.org/how-to-customize-dock-panel-on-ubuntu-20-04-focal-fossa-linux
-sudo apt-get install dconf-editor -y 
+# sudo apt-get install dconf-editor -y 
 
-gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
-gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
+# gsettings set org.gnome.shell.extensions.dash-to-dock extend-height false
+# gsettings set org.gnome.shell.extensions.dash-to-dock dock-position BOTTOM
 
 
 
