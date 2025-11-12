@@ -11,7 +11,7 @@ echo "Installing zsh ..."
 sudo apt install zsh -y
 
 echo "Installing oh-my-zsh..."
-sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 
 
