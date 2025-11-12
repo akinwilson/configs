@@ -28,7 +28,9 @@ curl -o ~/.zshenv https://raw.githubusercontent.com/akinwilson/configs/refs/head
 # echo "Copying over tmux plugin configurations ..."
 # curl -o ~/.tmux.conf https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/tmux.conf
 
-
+echo "Copying over jupyter-notebook installation script"
+curl -o ~/.install-jp.py https://raw.githubusercontent.com/akinwilson/configs/refs/heads/main/configs/install-jpnb.py
+chmod +x ~/.install-jp.y
 
 # echo "Installing tmux .."
 # sudo apt install tmux -y 
